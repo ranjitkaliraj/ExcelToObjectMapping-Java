@@ -11,7 +11,7 @@ Foo        Earth       322
 Bar        Jupiter     433
 ```
 
-Create a sample model class.
+###### Create a sample model class:
 
 ** Note: Currently supported data type are: String, Date, int, long, float, double and boolean. If any other data type are provided, value will be not read from excel file. **
 ```
