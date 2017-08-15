@@ -1,18 +1,19 @@
 # ExcelToObjectMapping-Java
 A simple Excel to Object mapper utility using Apache POI.
 
-Usage:
+Usage Example:
 
 Sample excel file (.xlsx):
+```
 Name    | Address  |  Number
 Ranjit     Mars        123
 Foo        Earth       322
 Bar        Jupiter     433
-
+```
 
 Create a sample model class.
-Note: Currently supported data type are: String, Date, int, long, float, double and boolean. If any other data type are provided, value will be not read from excel file. 
-
+**Note: Currently supported data type are: String, Date, int, long, float, double and boolean. If any other data type are provided, value will be not read from excel file. **
+```
 public class Student {
     private String name;
     private String address;
@@ -20,7 +21,9 @@ public class Student {
     
     //getters and setters
 }
-
+```
+Mapping Excel to Object:
+```
 String file = "/home/ranjit/students.xlsx";
 try {
     ExcelToObjectMapper mapper = new ExcelToObjectMapper(file);
@@ -39,5 +42,5 @@ try {
     System.out.println("Error occured. Unable to execute mapping.");
     e.printStackTrace();
 }
-
+```
 
