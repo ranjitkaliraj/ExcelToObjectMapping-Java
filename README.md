@@ -4,6 +4,7 @@ A simple Excel to Object mapper utility using Apache POI.
 ## Usage Example:
 
 ###### Sample excel file (.xlsx):
+** Note: Header row must be the first row.** 
 ```
 Name    | Address  |  Number
 Ranjit     Mars        123
@@ -13,7 +14,7 @@ Bar        Jupiter     433
 
 ###### Create a sample model class:
 
-** Note: Currently supported data type are: String, Date, int, long, float, double and boolean. If any other data type are provided, value will be not read from excel file. **
+** Note: Currently supported data type are: String, Date, int, long, float, double and boolean. If any other data type are provided, value will be not read from excel file. Also, field name must exactly match with excel file header.**
 ```
 public class Student {
     private String name;
